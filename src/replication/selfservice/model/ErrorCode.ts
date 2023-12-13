@@ -23,8 +23,8 @@ export const ErrorMessage = {
   [ErrorCode.INVALID_MAX_START_DAYS]: 'Maximum start days need to be between 2 and 30',
   [ErrorCode.INVALID_MIN_MAX_START_DAYS]: 'Minimum start days cannot be greater than maximum start days',
   [ErrorCode.INVALID_PRICE]: 'Price needs to be greater or equal to 0',
-  [ErrorCode.INVALID_MIN_DURATION_DAYS]: 'Minimum duration days need to be between 180 and 540',
-  [ErrorCode.INVALID_MAX_DURATION_DAYS]: 'Maximum duration days need to be between 180 and 540',
+  [ErrorCode.INVALID_MIN_DURATION_DAYS]: 'Minimum duration days need to be between 180 and 1278',
+  [ErrorCode.INVALID_MAX_DURATION_DAYS]: 'Maximum duration days need to be between 180 and 1278',
   [ErrorCode.INVALID_MIN_MAX_DURATION_DAYS]: 'Minimum duration days cannot be greater than maximum duration days',
   [ErrorCode.INVALID_PROVIDER]: 'Provider is not provided',
   [ErrorCode.INVALID_DATASET]: 'Dataset is not provided',
@@ -32,7 +32,7 @@ export const ErrorMessage = {
   [ErrorCode.ALREADY_PROPOSED]: 'The deal has already been proposed for the same provider and pieceCid',
   [ErrorCode.NO_PIECE_TO_PROPOSE]: 'No more pieceCid to propose for the same provider and dataset',
   [ErrorCode.PIECE_NOT_FOUND]: 'The pieceCid is not found with the specified dataset',
-  [ErrorCode.INVALID_MAX_DAYS]: 'maxDurationDays + maxStartDays >= 540, this will lead to invalid deal proposal',
+  [ErrorCode.INVALID_MAX_DAYS]: 'maxDurationDays + maxStartDays >= 1278, this will lead to invalid deal proposal',
   [ErrorCode.INVALID_REQUEST]: 'The request is invalid. Some parameters are missing.'
 };
 

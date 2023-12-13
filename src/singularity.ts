@@ -869,8 +869,8 @@ replication.command('start')
           CliUtil.renderErrorAndExit(`Invalid cron schedule format ${options.cronSchedule}. Try https://crontab.guru/ for a sample.`);
         }
       }
-      if ((options.startDelay * 1 + options.duration * 1) > 540) {
-        CliUtil.renderErrorAndExit(`Start Delay + Duration cannot exceed 540 days.`);
+      if ((options.startDelay * 1 + options.duration * 1) > 1278) {
+        CliUtil.renderErrorAndExit(`Start Delay + Duration cannot exceed 1278 days.`);
       }
       const url: string = config.get('connection.deal_replication_service');
       response = await axios.post(`${url}/replication`, {
