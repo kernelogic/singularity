@@ -105,12 +105,12 @@ export default class DealReplicationService extends BaseService {
         return;
       }
 
-      if (minDurationDays < 180 || minDurationDays > 540) {
+      if (minDurationDays < 180 || minDurationDays > 1278) {
         this.sendError(response, ErrorCode.INVALID_MIN_DURATION_DAYS);
         return;
       }
 
-      if (maxDurationDays < 180 || maxDurationDays > 540) {
+      if (maxDurationDays < 180 || maxDurationDays > 1278) {
         this.sendError(response, ErrorCode.INVALID_MAX_DURATION_DAYS);
         return;
       }
@@ -120,7 +120,7 @@ export default class DealReplicationService extends BaseService {
         return;
       }
 
-      if (maxDurationDays + maxStartDays >= 540) {
+      if (maxDurationDays + maxStartDays >= 1278) {
         this.sendError(response, ErrorCode.INVALID_MAX_DAYS);
       }
 

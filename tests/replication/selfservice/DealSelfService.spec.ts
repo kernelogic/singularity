@@ -492,7 +492,7 @@ describe('DealSelfService', () => {
             });
     })
 
-    it('should return error if the total duration >= 540', async () => {
+    it('should return error if the total duration >= 1278', async () => {
       const response = await supertest(service['app'])
         .post('/policy').send({
           ...defaultPolicy,
