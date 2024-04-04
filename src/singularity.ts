@@ -350,7 +350,7 @@ preparation.command('create').description('Start deal preparation for a local da
   .option('-t, --tmp-dir <tmp_dir>', 'Optional temporary directory. May be useful when it is at least 2x faster than the dataset source, such as when the dataset is on network mount, and the I/O is the bottleneck')
   .option('-f, --skip-inaccessible-files', 'Skip inaccessible files. Scanning may take longer to complete.')
   .option('--force', 'Skip making client side check of whether dataset path exists.')
-  .option('-l, --scan-limit <carslimit>', 'Max number of cars in this preparation. 0 means unlimited', '0')
+  .option('-l, --scan-limit <scan_limit>', 'Max number of cars in this preparation. 0 means unlimited', '0')
   .addOption(new Option('-m, --min-ratio <min_ratio>', 'Min ratio of deal to sector size, i.e. 0.55').argParser(parseFloat))
   .addOption(new Option('-M, --max-ratio <max_ratio>', 'Max ratio of deal to sector size, i.e. 0.95').argParser(parseFloat))
   .action(async (name, p: string, outDir, options) => {

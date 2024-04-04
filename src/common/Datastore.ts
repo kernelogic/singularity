@@ -301,6 +301,7 @@ export default class Datastore {
         unique: true
       },
       path: Schema.Types.String,
+      scanLimit: Schema.Types.Number,
       minSize: Schema.Types.Number,
       maxSize: Schema.Types.Number,
       outDir: Schema.Types.String,

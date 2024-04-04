@@ -136,6 +136,7 @@ export default async function handleCreatePreparationRequest (this: DealPreparat
   response.end(JSON.stringify({
     id: scanningRequest.id,
     name,
+    scanLimit: scanningRequest.scanLimit,
     minSize,
     maxSize,
     path,

@@ -2,6 +2,7 @@ export interface GetPreparationsResponseItem {
   id: string,
   name: string,
   path: string,
+  scanLimit: number,
   minSize: number,
   maxSize: number,
   outDir: string,

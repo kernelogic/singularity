@@ -31,6 +31,7 @@ export default async function handleListPreparationRequests (this: DealPreparati
       id: r.id,
       name: r.name,
       path: r.path,
+      scanLimit: r.scanLimit,
       minSize: r.minSize,
       maxSize: r.maxSize,
       outDir: r.outDir,
