@@ -13,6 +13,7 @@ export default interface GetPreparationDetailsResponse {
   id: string,
   name: string,
   path: string,
+  scanLimit: number,
   minSize: number,
   maxSize: number,
   outDir: string,

@@ -6,6 +6,7 @@ export default interface ScanningRequest {
   name: string,
   path: string,
   outDir: string,
+  scanLimit: number,
   minSize: number,
   maxSize: number,
   workerId?: string,

@@ -99,6 +99,7 @@ export default async function handleCreatePreparationRequest (this: DealPreparat
   }
   const scanningRequest = new Datastore.ScanningRequestModel();
   scanningRequest.name = name;
+  scanningRequest.scanLimit = requestBody.scanLimit;
   scanningRequest.minSize = minSize!;
   scanningRequest.maxSize = maxSize!;
   scanningRequest.path = path;

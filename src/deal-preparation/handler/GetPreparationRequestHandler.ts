@@ -41,6 +41,7 @@ export default async function handleGetPreparationRequest (this: DealPreparation
     id: found.id,
     name: found.name,
     path: found.path,
+    scanLimit: found.scanLimit,
     minSize: found.minSize,
     maxSize: found.maxSize,
     outDir: found.outDir,

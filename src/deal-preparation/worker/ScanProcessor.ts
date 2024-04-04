@@ -125,6 +125,13 @@ export default async function scan (logger: winston.Logger, request: ScanningReq
       request.rescanInitiated = false;
     }
     index++;
+    if (request.scanLimit > 0 && request.scanLimit === index) {
+      logger.info(`The scanning request has reached maximum allowed. Scanning stopped.`, {
+        id: request.id,
+        name: request.name
+      });
+      return;
+    }
     if ((await Datastore.ScanningRequestModel.findById(request.id))?.status === 'paused') {
       logger.info(`The scanning request has been paused. Scanning stopped.`, {
         id: request.id,
